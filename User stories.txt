@@ -1,0 +1,11 @@
+Make a games review website
+
+
+As a user i can add a game to the website so that ....
+As a user i can edit a game to the website
+As a user i can view a game to the website
+As a user i can delete a game to the website
+As a user i can add a review to a game
+As a user i can view a review to a game
+As a user i can edit a review to a game
+As a user i can delete a review to a game

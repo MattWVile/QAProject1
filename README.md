@@ -1,4 +1,4 @@
-# QAProject1
+
 Objective
 The objective provided for this project is as follows:
 
