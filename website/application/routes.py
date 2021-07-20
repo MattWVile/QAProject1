@@ -1,10 +1,10 @@
 from flask.templating import render_template
 from application import app, db
-from application.models import Tasks
+from application.models import Games
 
 from flask import redirect, url_for, request
-from .forms import TaskForm
-from .models import Tasks
+from .forms import GameForm, ReviewForm
+from .models import Games
 
 
 @app.route('/')
