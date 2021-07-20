@@ -1,15 +1,15 @@
 from flask.templating import render_template
 from application import app, db
-from application.models import Games
+from application.models import Game
 
 from flask import redirect, url_for, request
 from .forms import GameForm, ReviewForm
-from .models import Games
+from .models import Game
 
 
 @app.route('/')
 def home():
-    games =Games.query.all()
+    games =Game.query.all()
     return render_template("home.html", games=games)
 
 # @app.route('/create', methods=['GET', 'POST'])
