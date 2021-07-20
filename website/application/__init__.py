@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 app.config.update(
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///data.db',
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root@35.246.64.88/qaproject',
     SQLALCHEMY_TRACK_MODIFICATINOS=True,
     SECRET_KEY=str(os.urandom(16))
 )
