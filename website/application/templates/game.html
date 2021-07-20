@@ -1,0 +1,11 @@
+{% extends 'layout.html' %} 
+
+{% block body %}
+    <br>
+    {{ game.id }} - {{ game.title }} - {{ game.dev }}- {{ game.genre }}
+    {% for review in reviews %}
+        {{ review.name }} - {{ review.content }} - {{ review.date }}
+        <br>
+    {% endfor %}
+    <a href='{{ url_for("createreview", id=game.id) }}'>add a new review</a>
+{% endblock body %}

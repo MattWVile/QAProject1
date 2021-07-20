@@ -1,0 +1,13 @@
+{% extends 'layout.html' %} 
+
+{% block body %}
+    <br>
+    {% for game in games %}
+        {{ game.id }} - {{ game.title }}
+        <a href='{{ url_for("updategame", id=game.id) }}'>Edit game</a>
+        <a href='{{ url_for("deletegame", id=game.id) }}'>Delete game</a>
+        <a href='{{ url_for("readgame", id=game.id) }}'>View game reviews</a>
+        <br>
+    {% endfor %}
+
+{% endblock body %}
