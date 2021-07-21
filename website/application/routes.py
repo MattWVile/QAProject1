@@ -1,7 +1,7 @@
 from flask.templating import render_template
 from application import app, db
 from application.models import Game
-from datetime import date
+from datetime import datetime
 
 from flask import redirect, url_for, request
 from .forms import GameForm, ReviewForm
@@ -40,11 +40,11 @@ def updategame(id):
     form = GameForm()
 
     if request.method == 'POST':
-        if len(form.title.data) < 1:
+        if len(form.title.data) > 1:
             game.title = form.title.data
-        if len(form.genre.data) < 1:
+        if len(form.genre.data) > 1:
             game.genre = form.genre.data
-        if len(form.dev.data) < 1:
+        if len(form.dev.data) > 1:
             game.dev = form.dev.data
         db.session.add(game)
         db.session.commit()
@@ -61,11 +61,11 @@ def deletegame(id):
 
 
 @app.route('/create/review/<int:id>', methods=['GET', 'POST'])
-def createreview(): 
-    game_id = Game.query.get(id)
+def createreview(id): 
+    game = Game.query.get(id)
     form = ReviewForm()
     if request.method == 'POST':
-        new_review = Review(name=form.name.data, content=form.content.data,date=date.today(),game_id = game_id )
+        new_review = Review(name=form.name.data, content=form.content.data,date=datetime.today(),game_id = game.id )
         db.session.add(new_review)
         db.session.commit()
         return redirect(url_for('home'))
@@ -77,17 +77,16 @@ def updatereview(id):
     review = Review.query.get(id)
     form = ReviewForm()
     if request.method == 'POST':
-        if len(form.name.data) < 1:
+        if len(form.name.data) > 1:
             review.name = form.name.data
-            review.date = date.today()
-        if len(form.content.data) < 1:
+        if len(form.content.data) > 1:
             review.content = form.content.data
-            review.date = date.today()
+        review.date = datetime.today()
         db.session.add(review)
         db.session.commit()
         return redirect(url_for('home'))
     else:
-        return render_template('updatereview.html', form=form) 
+        return render_template('createreview.html', form=form) 
 
 @app.route('/delete/review/<int:id>')
 def deletereview(id):
