@@ -1,0 +1,14 @@
+{% extends 'layout.html' %} 
+
+{% block body %}
+    <br>
+    <h2>{{ game.title }} - {{ game.dev }} - {{ game.genre }}</h2>
+    <br>
+    {% for review in reviews %}
+        {{ review.name }} - {{ review.content }} - {{ review.date }}
+        <a href='{{ url_for("deletereview", id=review.id) }}'>delete review</a>
+        <a href='{{ url_for("updatereview", id=review.id) }}'>edit review</a>
+        <br>
+    {% endfor %}
+    <a href='{{ url_for("createreview", id=game.id) }}'>add a new review</a>
+{% endblock body %}
