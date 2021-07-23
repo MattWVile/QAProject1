@@ -5,6 +5,5 @@ pymysql
 flask-wtf
 wtforms
 flask-testing
-selenium
-pymysql 
 pytest
+pytest-cov

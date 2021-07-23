@@ -14,3 +14,15 @@ Clear documentation
 Detailed risk assessment
 Automated tests
 Fully integrated into Github or other VCS
+
+My idea was to make a website where a user can add reviews to games that have been added by other users so my first ERD looked like this.
+
+<a href="https://ibb.co/mcTBGBt"><img src="https://i.ibb.co/RDbS9SP/ERD-07-07-2021.jpg" alt="ERD-07-07-2021" border="0"></a>
+
+I then realised that the relationship between games and reviews was incorrect for what i was trying to achieve as I wanted each user to be able to add as many reviews they want to as many games as they want so updated my ERD to this.
+
+<a href="https://ibb.co/wg6WyFN"><img src="https://i.ibb.co/02JMqRj/ERD-14-07-2021.jpg" alt="ERD-14-07-2021" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
+
+I then came to the realisation that having a users table was out of scope for this particular project as it would take too long to implement a user login, I also wouldnt be awarded extra marks for a login feature so decided it would be a better idea for me to spend time on other parts of the project and updated the ERD accordingly.
+
+<a href="https://ibb.co/pZmbKZj"><img src="https://i.ibb.co/ftcqNtd/ERD-21-07-2021.jpg" alt="ERD-21-07-2021" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
