@@ -15,6 +15,8 @@ Detailed risk assessment
 Automated tests
 Fully integrated into Github or other VCS
 
+ERD
+
 My idea was to make a website where a user can add reviews to games that have been added by other users so my first ERD looked like this.
 
 <a href="https://ibb.co/mcTBGBt"><img src="https://i.ibb.co/RDbS9SP/ERD-07-07-2021.jpg" alt="ERD-07-07-2021" border="0"></a>
@@ -26,3 +28,19 @@ I then realised that the relationship between games and reviews was incorrect fo
 I then came to the realisation that having a users table was out of scope for this particular project as it would take too long to implement a user login, I also wouldnt be awarded extra marks for a login feature so decided it would be a better idea for me to spend time on other parts of the project and updated the ERD accordingly.
 
 <a href="https://ibb.co/pZmbKZj"><img src="https://i.ibb.co/ftcqNtd/ERD-21-07-2021.jpg" alt="ERD-21-07-2021" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
+
+Each game has a title, a genre and a developer. Each review has a name(of the reviewer), the content of the review, the date the review was posted/updated and a game_id linking to a specific game in the game table. This way each game can have many reviews.
+
+ CI Pipeline
+ 
+ This image below represents what services and tools I have chosen for each stage of development. 
+ 
+ <a href="https://ibb.co/XZRPLPt"><img src="https://i.ibb.co/7JmDCDK/Screenshot-2.png" alt="Screenshot-2" border="0"></a>
+ 
+ Project tracking
+ 
+ I used trello to track my progress of development throughout the development process. The image below is a screenshot of my board and the link to my board is [here](https://trello.com/b/8DT1sc66/qa-project-1)
+ 
+ <a href="https://ibb.co/HFLqfF0"><img src="https://i.ibb.co/r7KHR7g/trello-Screenshot.png" alt="trello-Screenshot" border="0"></a>
+
+
