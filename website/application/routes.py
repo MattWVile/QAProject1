@@ -1,7 +1,7 @@
 from flask.templating import render_template
 from application import app, db
 from application.models import Game
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from flask import redirect, url_for, request
 from .forms import GameForm, ReviewForm
@@ -70,7 +70,7 @@ def createreview(id):
     game = Game.query.get(id)
     form = ReviewForm()
     if request.method == 'POST':
-        new_review = Review(name=form.name.data, content=form.content.data,date=datetime.today(),game_id = game.id )
+        new_review = Review(name=form.name.data, content=form.content.data,date=datetime.today() + timedelta(hours=1),game_id = game.id )
         db.session.add(new_review)
         db.session.commit()
         all_reviews = Review.query.all()
@@ -92,7 +92,7 @@ def updatereview(id):
             review.name = form.name.data
         if len(form.content.data) > 1:
             review.content = form.content.data
-        review.date = datetime.today()
+        review.date = datetime.today() + timedelta(hours=1)
         db.session.add(review)
         db.session.commit()
         all_reviews = Review.query.all()

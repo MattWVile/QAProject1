@@ -2,4 +2,4 @@
 **/__pycache__
 venv
 .coverage
-.data.db
+application/data.db
