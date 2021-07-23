@@ -1,6 +1,5 @@
 .pytest_cache
 **/__pycache__
 venv
-appplication/.__init__.py
-appplication/__init__
 .coverage
+.data.db
