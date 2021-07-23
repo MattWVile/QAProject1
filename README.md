@@ -33,7 +33,7 @@ Each game has a title, a genre and a developer. Each review has a name(of the re
 
  CI Pipeline
  
- This image below represents what services and tools I have chosen for each stage of development. 
+ The image below represents what services and tools I have chosen for each stage of development. 
  
  <a href="https://ibb.co/XZRPLPt"><img src="https://i.ibb.co/7JmDCDK/Screenshot-2.png" alt="Screenshot-2" border="0"></a>
  
@@ -43,4 +43,13 @@ Each game has a title, a genre and a developer. Each review has a name(of the re
  
  <a href="https://ibb.co/HFLqfF0"><img src="https://i.ibb.co/r7KHR7g/trello-Screenshot.png" alt="trello-Screenshot" border="0"></a>
 
+Risk assessment
+
+The images below are screenshots of my risk assessment. I came back to it many times to outline more potential risks and how I came around these risks. The updated risk assesment can be found [here](Risk_assessment_23072021.pdf)
+
+<a href="https://ibb.co/3cZr4yg"><img src="https://i.ibb.co/BBMzcV0/Risk-assessment-screenshot-1.png" alt="Risk-assessment-screenshot-1" border="0"></a>
+<a href="https://ibb.co/mHJjPL7"><img src="https://i.ibb.co/Jzn1SfP/Risk-assessment-Screenshot-2.png" alt="Risk-assessment-Screenshot-2" border="0"></a><br />
+
+Testing 
+I used pytest to run unit tests on almost all of my functions in my application. I achieved an overall coverage of 
 
