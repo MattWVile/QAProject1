@@ -33,7 +33,7 @@ Each game has a title, a genre and a developer. Each review has a name(of the re
 
  CI Pipeline
  
- The image below represents what services and tools I have chosen for each stage of development. 
+ The image below represents what services and tools I have chosen for each stage of development. I used flask to quickly build the app including the database schema which conected to an external SQL instance as it is more secure.
  
  <a href="https://ibb.co/XZRPLPt"><img src="https://i.ibb.co/7JmDCDK/Screenshot-2.png" alt="Screenshot-2" border="0"></a>
  
