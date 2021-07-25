@@ -51,5 +51,9 @@ The images below are screenshots of my risk assessment. I came back to it many t
 <a href="https://ibb.co/mHJjPL7"><img src="https://i.ibb.co/Jzn1SfP/Risk-assessment-Screenshot-2.png" alt="Risk-assessment-Screenshot-2" border="0"></a><br />
 
 Testing 
-I used pytest to run unit tests on almost all of my functions in my application. I achieved an overall coverage of 
+I used pytest to run unit tests on almost all of my functions in my application and implemented jenkins to automatically run these tests. I achieved an overall coverage of 98% shown below.
+
+<a href="https://ibb.co/SPgcmM1"><img src="https://i.ibb.co/s24C1ND/Screenshot-7.png" alt="Screenshot-7" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>image sharing</a><br />
+
+
 
